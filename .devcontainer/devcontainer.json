@@ -1,0 +1,21 @@
+{
+	"name": "DIO Python API Lab",
+
+	"dockerComposeFile": [
+		"docker-compose.yml"
+	],
+
+	"service": "app",
+
+	"workspaceFolder": "/home/pyhton/app",
+
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-python.python",
+				"redhat.vscode-yaml",
+				"humao.rest-client"
+			]
+		}
+	}
+}

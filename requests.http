@@ -1,0 +1,38 @@
+### Find all
+GET http://localhost:8000/books HTTP/1.1
+
+### Find by id
+GET http://localhost:8000/books/640d2f86a3582f5f5a8ac32b HTTP/1.1
+
+#### Insert
+POST http://localhost:8000/books HTTP/1.1
+content-type: application/json
+
+{
+    "name": "The Last Wish",
+    "autor": "Andrzej Sapkowski",
+	"category": "Fiction"
+}
+
+#### Insert
+POST http://localhost:8000/books HTTP/1.1
+content-type: application/json
+
+{
+    "name": "The Icebound Land",
+    "autor": "John Flanagan",
+	"category": "Adventure"
+}
+
+### Update
+PUT http://localhost:8000/books/640d2f86a3582f5f5a8ac32b HTTP/1.1
+content-type: application/json
+
+{
+    "name": "The Icebound Land",
+    "autor": "John Flanagan",
+	"category": "Action"
+}
+
+### Delete
+DELETE http://localhost:8000/books/640d2f86a3582f5f5a8ac32b HTTP/1.1
